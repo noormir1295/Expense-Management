@@ -4,4 +4,16 @@ $(document).ready(() => {
   $.get("/api/user_data").then(data => {
     $(".member-name").text(data.email);
   });
+
+  module.exports = function(getCat) {
+  $(".category-btn").click(function() {
+    var catId = this.id
+    return catId
+  })
+  return getCat
+  }
+
+  $(".category-btn").click(function() {
+    
+  });
 });
