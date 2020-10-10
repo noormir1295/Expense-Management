@@ -1,4 +1,4 @@
-module.exports = function (sequelize, Datatypes) {
+module.exports = function (sequelize, DataTypes) {
   var Input = sequelize.define("Input", {
     title: {
       type: DataTypes.STRING,
@@ -9,17 +9,17 @@ module.exports = function (sequelize, Datatypes) {
     },
 
     amount: {
-      type: Datatypes.DECIMAL(10, 2),
+      type: DataTypes.DECIMAL(10, 2),
       allowNull: false,
     },
 
     date: {
-      type: Datatypes.INTEGER,
+      type: DataTypes.INTEGER,
       allowNull: false,
     },
 
     optionalText: {
-      type: Datatypes.STRING,
+      type: DataTypes.STRING,
       allowNull: false,
     },
   });
@@ -29,6 +29,12 @@ module.exports = function (sequelize, Datatypes) {
       foreignKey: {
         allowNull: false,
       },
+    });
+
+    Input.belongsTo(models.User, {
+      foreignKey: {
+        allowNull: false,
+      }
     });
   };
   return Input;
