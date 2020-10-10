@@ -15,3 +15,7 @@ form.login {
 .submit-btn {
   display: inline-block;
 }
+
+.input-title {
+  padding: 10px;
+}
