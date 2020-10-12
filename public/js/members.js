@@ -5,15 +5,8 @@ $(document).ready(() => {
     $(".member-name").text(data.email);
   });
 
-  module.exports = function(getCat) {
   $(".category-btn").click(function() {
-    var catId = this.id
-    return catId
+    localStorage.setItem("categoryId", this.id)
+    window.location.replace("/category");
   })
-  return getCat
-  }
-
-  $(".category-btn").click(function() {
-    
-  });
 });
