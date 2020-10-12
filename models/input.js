@@ -21,6 +21,9 @@ module.exports = function (sequelize, DataTypes) {
     optionalText: {
       type: DataTypes.STRING,
       allowNull: false,
+      validate: {
+        len: [1, 255],
+      },
     },
   });
 
