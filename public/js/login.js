@@ -28,7 +28,8 @@ $(document).ready(() => {
       email: email,
       password: password
     })
-      .then(() => {
+      .then((dbUser) => {
+        localStorage.setItem("User", JSON.stringify(dbUser))
         window.location.replace("/members");
         // If there's an error, log the error
       })

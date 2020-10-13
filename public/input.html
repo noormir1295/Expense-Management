@@ -50,25 +50,24 @@
     <div class="input-title">
         <h2>Title</h2>
     </div>
-    <div class="input-data">
+    <div class="input-data" >
         <p>Company/Store Name</p><input type="text" class="input" id="inputTitle">
-        <p>Amount Spent</p><input type="text" class="input" id="inputAmount">
+        <p>Amount Spent</p><input type="number" min="0.00" step="0.01" class="input" id="inputAmount">
         <p>Expense Date</p><input type="text" class="input" id="inputDate">
         <p>Miscellaneous</p><input type="text" class="input" id="inputOptionalText">
-        <button type="submit" class="submit-btn"> Submit </button>
+        <button type="submit" class="submit-btn" id="submit-btn"> Submit </button>
     </div>
     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
         integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/inputPublic.js"></script>
 </body>
 
 </html>

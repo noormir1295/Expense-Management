@@ -73,6 +73,9 @@ module.exports = function (app) {
       amount: req.body.amount,
       date: req.body.date,
       optionalText: req.body.optionalText,
+      CategoryId: req.body.CategoryId,
+      UserId: req.user.id,
+
     }).then(function (getInput) {
       res.json(getInput);
     });
@@ -97,4 +100,23 @@ module.exports = function (app) {
       res.json(dbInput);
     });
   });
+  app.get("/api/input/:id", (req, res) => {
+    db.Input.findAll({
+      where: {
+        CategoryId: req.params.id,
+      },
+    }).then(function (dbInput) {
+      res.json(dbInput);
+    });
+  });
+  app.get("/api/outputLog/:id", (req, res) => {
+    db.Input.findOne({
+      where: {
+        id: req.params.id,
+      },
+    }).then(function (dbInput) {
+      res.json(dbInput);
+    });
+  });
 };
+

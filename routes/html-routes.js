@@ -31,8 +31,8 @@ module.exports = function (app) {
     res.sendFile(path.join(__dirname, "../public/category.html"));
   });
 
-  app.get("/output-log", isAuthenticated, (req, res) => {
-    res.sendFile(path.join(__dirname, "../public/output-log.html"));
+  app.get("/outputLog/:id", isAuthenticated, (req, res) => {
+    res.sendFile(path.join(__dirname, "../public/outputLog.html"));
   });
 
   app.get("/input", isAuthenticated, (req, res) => {
