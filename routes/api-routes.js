@@ -100,8 +100,12 @@ module.exports = function (app) {
       res.json(dbInput);
     });
   });
-  app.get("/api/input", (req, res) => {
-    db.Input.findAll({}).then(function (dbInput) {
+  app.get("/api/input/:id", (req, res) => {
+    db.Input.findAll({
+      where: {
+        CategoryId: req.params.id,
+      },
+    }).then(function (dbInput) {
       res.json(dbInput);
     });
   });

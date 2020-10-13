@@ -14,7 +14,7 @@ $(document).ready(() => {
     window.location.replace("/input");
   })
   
-  $.get("/api/input").then(dbInput => {
+  $.get("/api/input/"+localCategorySave).then(dbInput => {
     for (let i = 0; i < dbInput.length; i++) {
       const title = dbInput[i].title;
   
