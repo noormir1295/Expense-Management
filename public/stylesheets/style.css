@@ -19,3 +19,73 @@ form.login {
 .input-title {
   padding: 10px;
 }
+
+body {
+    height: 110vh;
+
+  background:
+  linear-gradient( 45deg, linen,  grey );
+
+
+}
+
+.container {
+ display: inline block;
+ text-align: center;
+ margin-left: 500px;
+ padding: 20px;
+ padding-bottom: 50px;
+}
+
+.mainTitle {
+  padding-bottom: 50px;
+  padding-top: 20px;
+ 
+}
+
+.Welcome {
+  margin-right: 150px;
+  padding-top: 8px;
+}
+
+
+
+
+.category-btn {
+  width: 200px;
+  height: 60px;
+  background: none;
+  border: 4px solid;
+  color:  black;
+  font-weight: 700px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 16px;
+  position: relative;
+  border-radius: 30px;
+}
+.category-btn::before,.category-btn::after {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 4px;
+  background: cyan;
+  transform: skewX(50deg);
+  transition: .4s linear;
+}
+.category-btn::before {
+  top: -4px;
+  left: 10%;
+}
+.category-btn::after {
+  bottom: -4px;
+  right: 10%;
+}
+
+.category-btn:hover::before {
+  left: 80%;
+}
+
+.category-btn:hover::after {
+  right: 80%;
+}
