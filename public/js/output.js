@@ -4,8 +4,11 @@
 // var optionalText = $("#optionalText")
 
 $(document).ready(() => {
+  $.get("/api/user_data").then(data => {
+    $(".member-name").text(data.email);
+  });
+
   $.get("/api/outputLog/"+window.location.pathname.split("/").pop()).then(dbInput => {
-    console.log(dbInput.title)
       const title = dbInput.title;
       const amount = dbInput.amount;
       const date = dbInput.date;

@@ -85,6 +85,7 @@ module.exports = function (app) {
     db.Input.destroy({
       where: {
         id: req.params.id,
+        
       },
     }).then(function (dbInput) {
       res.json(dbInput);
