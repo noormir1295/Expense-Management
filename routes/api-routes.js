@@ -105,6 +105,7 @@ module.exports = function (app) {
     db.Input.findAll({
       where: {
         CategoryId: req.params.id,
+        UserId: req.user.id
       },
     }).then(function (dbInput) {
       res.json(dbInput);
