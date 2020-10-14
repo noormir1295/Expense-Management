@@ -148,3 +148,18 @@ text-align: center;
 .saveBtn:hover::after {
   right: 80%;
 }
+
+/* colors for credit score */
+.red {
+  background-color: red;
+}
+.orange {
+  background-color: orange;
+}
+.yellow {
+  background-color: yellow;
+}
+.green {
+  background-color: lightgreen;
+}
+
