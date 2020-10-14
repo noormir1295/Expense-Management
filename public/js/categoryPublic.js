@@ -10,6 +10,7 @@ $(document).ready(() => {
   });
 
   $.get("/api/category/"+localCategorySave).then(data => {
+    categoryTitle.setAttribute("class", "categoryTitle")
     categoryTitle.text(data.title);
   });
 
