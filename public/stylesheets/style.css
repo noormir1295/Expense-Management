@@ -93,8 +93,6 @@ body {
 
 }
 
-.
-
 
 .delButton {
    width: 110px;
@@ -159,6 +157,7 @@ body {
 .Welcome {
   margin-right: 150px;
   padding-top: 8px;
+  color: black;
 }
 
 
@@ -315,8 +314,8 @@ text-align: center;
   font-size: 16px;
   position: relative;
   border-radius: 30px;
+ 
 }
-
 .login-button::before,.login-button::after {
   content: "";
   position: absolute;
@@ -326,7 +325,6 @@ text-align: center;
   transform: skewX(50deg);
   transition: .4s linear;
 }
-
 .login-button::before {
   top: -4px;
   left: 10%;
@@ -342,18 +340,4 @@ text-align: center;
 
 .login-button:hover::after {
   right: 80%;
-}
-
-/* colors for credit score */
-.red {
-  background-color: red;
-}
-.orange {
-  background-color: orange;
-}
-.yellow {
-  background-color: yellow;
-}
-.green {
-  background-color: lightgreen;
 }
