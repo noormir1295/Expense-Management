@@ -1,6 +1,9 @@
 var localCategorySave = localStorage.getItem("categoryId")
 
 $(document).ready(function() {
+  $.get("/api/user_data").then(data => {
+    $(".member-name").text(data.email);
+  });
   
   const inputTitle = $('#inputTitle');
   const inputAmount = $('#inputAmount');
