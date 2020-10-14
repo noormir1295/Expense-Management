@@ -13,21 +13,37 @@ $(document).ready(() => {
   $(".add-btn").click(function() {
     window.location.replace("/input");
   })
-  
+
   $.get("/api/input/"+localCategorySave).then(dbInput => {
     for (let i = 0; i < dbInput.length; i++) {
       const title = dbInput[i].title;
   
       const li = document.createElement("li");
       const a = document.createElement("a");
+      const button = document.createElement("button")
 
       a.textContent = title;
 
       dynamicTitle.append(li);
       li.append(a)
+      li.append(button)
 
       a.setAttribute("id", dbInput[i].id)
       a.setAttribute("href", ("/outputLog/"+dbInput[i].id))
+
+      button.textContent = "Delete"
+
+      button.setAttribute("class", "delButton")
+      button.setAttribute("id", dbInput[i].id)
+      button.addEventListener("click", function() {
+        $.ajax({
+          method: "DELETE",
+          url: "/api/input/" + this.id
+        })
+          .then(function() {
+            window.location.replace("/category");
+          }); 
+      });
     }
   });
 });
