@@ -21,7 +21,7 @@ form.login {
 }
 
 body {
-    height: 110vh;
+    height: 130vh;
 
   background:
   linear-gradient( 45deg, linen,  grey );
@@ -29,13 +29,7 @@ body {
 
 }
 
-.container {
- display: inline block;
- text-align: center;
- margin-left: 500px;
- padding: 20px;
- padding-bottom: 50px;
-}
+
 
 .mainTitle {
   padding-bottom: 50px;
@@ -63,6 +57,7 @@ body {
   font-size: 16px;
   position: relative;
   border-radius: 30px;
+  margin: 5px;
 }
 .category-btn::before,.category-btn::after {
   content: "";
@@ -87,5 +82,51 @@ body {
 }
 
 .category-btn:hover::after {
+  right: 80%;
+}
+
+
+.creditDiv {
+padding-top: 50px;
+margin-left: 10px;
+}
+
+.saveBtn {
+  width: 110px;
+  height: 40px;
+  background: none;
+  border: 4px solid;
+  color:  black;
+  font-weight: 700px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 16px;
+  position: relative;
+  border-radius: 30px;
+ 
+}
+.saveBtn::before,.saveBtn::after {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 4px;
+  background: cyan;
+  transform: skewX(50deg);
+  transition: .4s linear;
+}
+.saveBtn::before {
+  top: -4px;
+  left: 10%;
+}
+.saveBtn::after {
+  bottom: -4px;
+  right: 10%;
+}
+
+.saveBtn:hover::before {
+  left: 80%;
+}
+
+.saveBtn:hover::after {
   right: 80%;
 }

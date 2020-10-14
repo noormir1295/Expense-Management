@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link href="stylesheets/style.css" rel="stylesheet">
-  
+
 
 
   <title>Members</title>
@@ -42,7 +42,7 @@
       </div>
     </div>
     <div class="logout-btn">
-      <a class="navbar-brand" href="/logout">
+      <a class="navbar-brand" href="/login.html">
         Logout
       </a>
     </div>
@@ -67,21 +67,26 @@
   </div>
 
   <div class="category-title">
-    <button class="category-btn" id="1">Rent/Mortgage</button>
-    <button class="category-btn" id="2">Bills & Utilities</button>
-    <button class="category-btn" id="3">Vehicle Expenses</button>
-    <button class="category-btn" id="4">Personal Use</button>
-    <button class="category-btn" id="5">Accessories</button>
-    <button class="category-btn" id="6">Food & Dining</button>
-    <button class="category-btn" id="7">Travel</button>
-    <button class="category-btn" id="8">Other</button>
+    <div class="buttongroup1">
+      <button class="category-btn" id="1">Rent/Mortgage</button>
+      <button class="category-btn" id="2">Bills & Utilities</button>
+      <button class="category-btn" id="3">Vehicle Expenses</button>
+      <button class="category-btn" id="4">Personal Use</button>
+    </div>
+    <div class="buttongroup2">
+      <button class="category-btn" id="5">Accessories</button>
+      <button class="category-btn" id="6">Food & Dining</button>
+      <button class="category-btn" id="7">Travel</button>
+      <button class="category-btn" id="8">Other</button>
+    </div>
+
   </div>
 
-  <div>
-    Add your current credit score to keep track of it, most recenty added credit score is:
+  <div class="creditDiv">
+    <h4>Add your current credit score to keep track of it, most recenty added credit score is:</h4>
     <span id="creditOutput"></span>
     <input type="number" id="creditInput">
-    <button id="credit-btn">Save</button>
+    <button class="saveBtn" id="credit-btn">Save</button>
     <a target="_blank" href="https://www.creditkarma.com/">Check your credit score here</a>
   </div>
 
