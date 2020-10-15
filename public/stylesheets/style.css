@@ -251,6 +251,10 @@ margin-top: 30px;
 margin-bottom: 10px;
 }
 
+.creditOutput {
+  color: black;
+}
+
 .creditDiv {
 padding-top: 50px;
 
@@ -340,4 +344,24 @@ text-align: center;
 
 .login-button:hover::after {
   right: 80%;
+
+
+/* colors for credit score */
+.red {
+  background-color: tomato;
 }
+.orange {
+  background-color: orange;
+}
+.yellow {
+  background-color: yellow;
+}
+.blue {
+  background-color: dodgerblue;
+}
+.green {
+  background-color: aquamarine;
+}
+
+}
+
