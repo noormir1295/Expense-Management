@@ -7,11 +7,13 @@ form.login {
   display: inline-block;
   padding: 20px;
   margin-left:10px;
+  
 }
 
 .input-data > h4 {
   padding: 10px;
  margin-left: 10px;
+ font-family: 'Piedra', cursive;
 }
 
 .input {
@@ -75,12 +77,10 @@ form.login {
 .input-title {
   padding: 20px;
   margin-left: 20px;
+  font-family: 'Piedra', cursive
 }
 
-.categoryTitle {
-  padding: 20px;
-  margin-left: 20px;
-}
+
 
 body {
     height: 170vh;
@@ -141,6 +141,7 @@ body {
   padding-top: 20px;
   margin-top: 40px;
   text-align: center;
+  font-family: 'Piedra', cursive;
 
  
 }
