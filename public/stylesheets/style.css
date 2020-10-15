@@ -7,14 +7,14 @@ form.login {
   display: inline-block;
   padding: 20px;
   margin-left:10px;
-  font-family: 'Piedra', cursive;
+  
   
 }
 
 .input-data > h4 {
   padding: 10px;
  margin-left: 10px;
- font-family: 'Piedra', cursive;
+ 
 }
 
 .input {
@@ -28,12 +28,12 @@ form.login {
 }
 
 a:link {
-  color: grey;
+  color: black;
   background-color: transparent;
   text-decoration: none;
 }
 a:visited {
-  color: pink;
+  color: black;
   background-color: transparent;
   text-decoration: none;
 }
@@ -53,13 +53,14 @@ a:active {
   border-radius: 40px;
 }
 
+
 .submit-btn {
   margin-top: 10px;
   width: 110px;
   height: 40px;
   background: none;
   border: 4px solid;
-  color:  linen;
+  color:  black;
   font-weight: 700px;
   text-transform: uppercase;
   cursor: pointer;
@@ -73,7 +74,7 @@ a:active {
   position: absolute;
   width: 14px;
   height: 4px;
-  background: #c3074f;
+  background: whitesmoke;
   transform: skewX(50deg);
   transition: .4s linear;
 }
@@ -97,7 +98,13 @@ a:active {
 .input-title {
   padding: 20px;
   margin-left: 20px;
-  font-family: 'Piedra', cursive
+  
+}
+
+#piechart {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
 }
 
 
@@ -105,21 +112,26 @@ a:active {
 body {
     height: 170vh;
 
-  background:
-  linear-gradient( 45deg, #6F2232 ,  #1A1A1D );
+    color: black;
 
-  color: linen;
-
-
+    background-color: whitesmoke;
+    
+    
+    
+  }
+  
+  .navbar {
+    color: linen;
+    background:
+    linear-gradient( 45deg, #6F2232 ,  linen );
 }
-
 
 .delButton {
    width: 110px;
   height: 40px;
   background: none;
   border: 4px solid;
-  color:  linen;
+  color:  black;
   font-weight: 700px;
   text-transform: uppercase;
   cursor: pointer;
@@ -134,7 +146,7 @@ body {
   position: absolute;
   width: 14px;
   height: 4px;
-  background: #c3074f;
+  background: whitesmoke;
   transform: skewX(50deg);
   transition: .4s linear;
 }
@@ -161,12 +173,12 @@ body {
   padding-top: 20px;
   margin-top: 40px;
   text-align: center;
-  font-family: 'Piedra', cursive;
+ 
 
  
 }
 .container {
-  font-family: 'Piedra', cursive;
+  
 }
 
 .mainSen {
@@ -194,7 +206,7 @@ body {
   height: 60px;
   background: none;
   border: 4px solid;
-  color:  linen;
+  color:  black];
   font-weight: 700px;
   text-transform: uppercase;
   cursor: pointer;
@@ -209,7 +221,7 @@ body {
   position: absolute;
   width: 14px;
   height: 4px;
-  background: #c3074f;
+  background: whitesmoke;
   transform: skewX(50deg);
   transition: .4s linear;
 }
@@ -235,7 +247,7 @@ body {
   height: 60px;
   background: none;
   border: 4px solid;
-  color:  linen;
+  color:  black;
   font-weight: 700px;
   text-transform: uppercase;
   cursor: pointer;
@@ -250,7 +262,7 @@ body {
   position: absolute;
   width: 14px;
   height: 4px;
-  background: #c3074f;
+  background: whitesmoke;
   transform: skewX(50deg);
   transition: .4s linear;
 }
@@ -286,7 +298,7 @@ padding-top: 50px;
 
 margin-top: 30px;
 text-align: center;
-font-family: 'Piedra', cursive;
+
 }
 
 .input{
@@ -298,7 +310,7 @@ font-family: 'Piedra', cursive;
   height: 40px;
   background: none;
   border: 4px solid;
-  color:  linen;
+  color:  black;
   font-weight: 700px;
   text-transform: uppercase;
   cursor: pointer;
@@ -312,7 +324,7 @@ font-family: 'Piedra', cursive;
   position: absolute;
   width: 14px;
   height: 4px;
-  background: #c3074f;
+  background: whitesmoke;
   transform: skewX(50deg);
   transition: .4s linear;
 }
@@ -338,7 +350,7 @@ font-family: 'Piedra', cursive;
   height: 40px;
   background: none;
   border: 4px solid;
-  color:  linen;
+  color:  black;
   font-weight: 700px;
   text-transform: uppercase;
   cursor: pointer;
@@ -352,7 +364,7 @@ font-family: 'Piedra', cursive;
   position: absolute;
   width: 14px;
   height: 4px;
-  background: #c3074f;
+  background: whitesmoke;
   transform: skewX(50deg);
   transition: .4s linear;
 }
@@ -378,6 +390,7 @@ font-family: 'Piedra', cursive;
 }
 .orange {
   background-color: orange;
+
 }
 .yellow {
   background-color: yellow;
@@ -387,5 +400,12 @@ font-family: 'Piedra', cursive;
 }
 .green {
   background-color: aquamarine;
+}
+
+#creditOutput {
+   border-radius: 15px;
+  width: 70px;
+  padding: 7px;
+  font-size: x-large;
 }
 
