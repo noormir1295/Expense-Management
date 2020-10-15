@@ -352,8 +352,7 @@ font-family: 'Piedra', cursive;
 
 .login-button:hover::after {
   right: 80%;
-
-
+}
 /* colors for credit score */
 .red {
   background-color: tomato;
@@ -369,7 +368,5 @@ font-family: 'Piedra', cursive;
 }
 .green {
   background-color: aquamarine;
-}
-
 }
 
