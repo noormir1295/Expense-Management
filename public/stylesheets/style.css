@@ -344,8 +344,7 @@ text-align: center;
 
 .login-button:hover::after {
   right: 80%;
-
-
+}
 /* colors for credit score */
 .red {
   background-color: tomato;
@@ -361,7 +360,5 @@ text-align: center;
 }
 .green {
   background-color: aquamarine;
-}
-
 }
 
