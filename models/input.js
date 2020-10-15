@@ -9,12 +9,12 @@ module.exports = function (sequelize, DataTypes) {
     },
 
     amount: {
-      type: DataTypes.DECIMAL(10, 2),
+      type: DataTypes.DECIMAL(65, 2),
       allowNull: false,
     },
 
     date: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: false,
     },
 
