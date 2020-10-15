@@ -8,9 +8,7 @@ $(document).ready(() => {
   $.get("/api/user_data").then(data => {
     $(".member-name").text(data.email);
   });
-
   $.get("/api/category/"+localCategorySave).then(data => {
-    categoryTitle.setAttribute("class", "categoryTitle")
     categoryTitle.text(data.title);
   });
 

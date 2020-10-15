@@ -120,5 +120,14 @@ module.exports = function (app) {
       res.json(dbInput);
     });
   });
+  app.get("/api/chart", (req, res) => {
+    db.Input.findAll({
+      where: {
+        UserId: req.user.id
+      },
+    }).then(function (dbChart) {
+      res.json(dbChart);
+    });
+  });
 };
 
