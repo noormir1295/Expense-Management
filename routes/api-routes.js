@@ -68,6 +68,7 @@ module.exports = function (app) {
   });
 
   app.post("/api/input", (req, res) => {
+    console.log(req.body)
     db.Input.create({
       title: req.body.title,
       amount: req.body.amount,

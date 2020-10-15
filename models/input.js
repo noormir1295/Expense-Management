@@ -14,15 +14,15 @@ module.exports = function (sequelize, DataTypes) {
     },
 
     date: {
-      type: DataTypes.STRING,
+      type: DataTypes.DATEONLY,
       allowNull: false,
     },
 
     optionalText: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
       validate: {
-        len: [1, 255],
+        len: [0, 255],
       },
     },
   });
