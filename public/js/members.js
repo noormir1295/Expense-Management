@@ -39,15 +39,47 @@ $(document).ready(() => {
 
 
   $.get("/api/chart").then(data => {
-    console.log(data)
-    // const rent = [];
-    // for (let i = 0; i < data.length; i++) {
-    //   if (data[i].CategoryId = 1) {
-    //     rent.push(data[i]);
-    //   }
-    // }
-    // let rent = data.filter(rent => rent.CategoryId = 1);
-    // console.log(rent)
+    let rent = data.filter(rent => rent.CategoryId === 1);
+    let rentAmount = 0;
+    for (let i = 0; i < rent.length; i++) {
+      rentAmount += parseFloat(rent[i].amount);
+    }
+    let bills = data.filter(bills => bills.CategoryId === 2);
+    let billsAmount = 0;
+    for (let i = 0; i < bills.length; i++) {
+      billsAmount += parseFloat(bills[i].amount);
+    }
+    let vehicle = data.filter(vehicle => vehicle.CategoryId === 3);
+    let vehicleAmount = 0;
+    for (let i = 0; i < vehicle.length; i++) {
+      vehicleAmount += parseFloat(vehicle[i].amount);
+    }
+    let personal = data.filter(personal => personal.CategoryId === 4);
+    let personalAmount = 0;
+    for (let i = 0; i < personal.length; i++) {
+      personalAmount += parseFloat(personal[i].amount);
+    }
+    let accessories = data.filter(accessories => accessories.CategoryId === 5);
+    let accessoriesAmount = 0;
+    for (let i = 0; i < accessories.length; i++) {
+      accessoriesAmount += parseFloat(accessories[i].amount);
+    }
+    let food = data.filter(food => food.CategoryId === 6);
+    let foodAmount = 0;
+    for (let i = 0; i < food.length; i++) {
+      foodAmount += parseFloat(food[i].amount);
+    }
+    let travel = data.filter(travel => travel.CategoryId === 7);
+    let travelAmount = 0;
+    for (let i = 0; i < travel.length; i++) {
+      travelAmount += parseFloat(travel[i].amount);
+    }
+    let other = data.filter(other => other.CategoryId === 8);
+    let otherAmount = 0;
+    for (let i = 0; i < other.length; i++) {
+      otherAmount += parseFloat(other[i].amount);
+    }
+
 
     //Load google charts
     google.charts.load('current', { 'packages': ['corechart'] });
@@ -57,14 +89,14 @@ $(document).ready(() => {
     function drawChart() {
       var data = google.visualization.arrayToDataTable([
         ['Expenses', 'amount of'],
-        ['Rent', 1],
-        ['Bills', 5],
-        ['Vehicle', 2],
-        ['Personal', 30],
-        ['Accessories', 1],
-        ['Food', 1],
-        ['Travel', 1],
-        ['Other', 1]
+        ['Rent', rentAmount],
+        ['Bills', billsAmount],
+        ['Vehicle', vehicleAmount],
+        ['Personal', personalAmount],
+        ['Accessories', accessoriesAmount],
+        ['Food', foodAmount],
+        ['Travel', travelAmount],
+        ['Other', otherAmount]
       ]);
 
       // Optional; add a title and set the width and height of the chart
