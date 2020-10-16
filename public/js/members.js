@@ -82,9 +82,10 @@ $(document).ready(() => {
 
 
     //Load google charts
+    
+    if (rentAmount != 0 || billsAmount != 0 || vehicleAmount != 0 || personalAmount != 0 || accessoriesAmount != 0 || foodAmount != 0 || travelAmount != 0 || otherAmount != 0) {
     google.charts.load('current', { 'packages': ['corechart'] });
     google.charts.setOnLoadCallback(drawChart);
-
     // Draw the chart and set the chart values
     function drawChart() {
       var data = google.visualization.arrayToDataTable([
@@ -106,5 +107,6 @@ $(document).ready(() => {
       var chart = new google.visualization.PieChart(document.getElementById('piechart'));
       chart.draw(data, options);
     }
+  }
   })
 });

@@ -218,10 +218,12 @@ body {
   transform: skewX(50deg);
   transition: .4s linear;
 }
+
 .category-btn::before {
   top: -4px;
   left: 10%;
 }
+
 .category-btn::after {
   bottom: -4px;
   right: 10%;
@@ -431,5 +433,4 @@ margin-top: 10px;
 .copyright {
   margin-top: 10px;
 }
-
 
