@@ -206,7 +206,7 @@ body {
   height: 60px;
   background: none;
   border: 4px solid;
-  color:  black];
+  color:  black;
   font-weight: 700px;
   text-transform: uppercase;
   cursor: pointer;
@@ -214,8 +214,8 @@ body {
   position: relative;
   border-radius: 30px;
   margin: 10px;
-  
 }
+
 .category-btn::before,.category-btn::after {
   content: "";
   position: absolute;
@@ -225,10 +225,12 @@ body {
   transform: skewX(50deg);
   transition: .4s linear;
 }
+
 .category-btn::before {
   top: -4px;
   left: 10%;
 }
+
 .category-btn::after {
   bottom: -4px;
   right: 10%;
@@ -408,4 +410,3 @@ text-align: center;
   padding: 7px;
   font-size: x-large;
 }
-
